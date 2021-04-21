@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height:100vh ;
+    background: #251801;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.container .face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px ;
+
+
+}
+
+
+.container .face:hover{
+    background:linear-gradient(189deg, #f44336,#f44336, #ffcd00) ;
+}
+
+
+
+
+.container .face .eyes {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.container .face .eyes .eye {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.container .face .eyes .eye:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+
+}
